@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Digital Colouring Canvas Game</title>
+    <link rel="stylesheet" href="Colouringstyle.css"/>
+  </head>
+
+  <nav>
+    <ul>
+      <li><a href="#intro"><img src="Images\WebLogo.png" alt="WebLogo" width="170" height="170"/></a></li>
+      <li><a href="#about">What is it?</a></li>
+      <li><a href="#controls">Controls</a></li>
+      <li><a href="#download">Download</a></li>
+      <li><a href="#credits">Credits</a></li>
+    </ul>
+  </nav>
+
+  <body>
+    <h1 id="intro">Digital Colouring Canvas</h1>
+      <h3>Hello! Welcome to my website where you can download my colouring game!</h3>
+
+    <section id="about">
+      <h2>What is it?</h2>
+        <p>In one of my classes I was tasked to create my very own Creative Coding Project using Processing and for that I decided to develop a colouring game for your computers or laptops.</p>
+        <p>Currently there are a total of <strong>8 sketches</strong> which you can paint with <strong>18 different colours</strong> and <strong>2 different types of paint brushes</strong>. But if your want to create your own art, there is also a <strong>blank canvas</strong> option.</p>
+      <h3>Sketches</h3>
+      <div class="sketches">
+        <div id="S">
+          <img src="Images\1.png" alt="Sketch 1 - Cat Face" width="200" height="200"/>
+          <img src="Images\2.png" alt="Sketch 2 - Flowers" width="200" height="200"/>
+          <img src="Images\3.png" alt="Sketch 3 - House" width="200" height="200"/>
+          <img src="Images\4.png" alt="Sketch 4 - Dining Table" width="200" height="200"/>
+        </div>
+        <div id="S">
+          <img src="Images\5.png" alt="Sketch 5 - Road Trip" width="200" height="200"/>
+          <img src="Images\6.png" alt="Sketch 6 - Ship" width="200" height="200"/>
+          <img src="Images\7.png" alt="Sketch 7 - City" width="200" height="200"/>
+          <img src="Images\8.png" alt="Sketch 8 - Pattern" width="200" height="200"/>
+        </div>
+      </div>
+      <div class="tools">
+        <div id="T">
+          <h3>Blank Canvas, Colour Palette & Size Slider</h3>
+          <img src="Images\blankcanvas.png" alt="Sketch 1 - Cat Face" width="450" height="350"/>
+        </div>
+        <div id="T">
+          <h3>Paint Brushes</h3>
+          <img src="Images\Circle Brush.PNG" alt="Circle Brush" class="brush" width="200" height="200"/>
+          <img src="Images\Square Brush.PNG" alt="Square Brush" class="brush" width="200" height="200"/>
+        </div>
+      </div>
+      <div class="pop">
+        <p>As you can tell, this project is not yet that advanced as many other colouring games but I do hope you enjoy it nevertheless!</p>
+        <p>And for those who are into coding, the code will be included in the download so you can make your own edits as long as you have Processing.</p>
+      </div>
+    </section>
+
+    <section id="controls">
+      <h2>Controls</h2>
+        <h4>Now here are some simple controls that you need to remember:</h4>
+        <dl>
+          <dt>0. Starting the Game</dt>
+            <dd>To start the colouring game, after dowloading both Processing and the Game which can be found at the <a href="#download">download</a> section, open the processing file called <em>"Colouring-In Game"</em> and then <strong>press CRTL + R (Windows)</strong> or <strong>COMMAND + R (Mac)</strong>.</dd>
+            <video autoplay loop muted><source src="Videos\Download Video.mp4">Your browser does not support the video tag.</video>
+          <dt>1. Picking Paintbrush Type</dt>
+            <dd>There are two types of paintbrush you can use as of now. To select a paintbrush you must press down on your mouse and select:<dd>
+              <ul>
+                <li>Left Arrow Key for Circle</li>
+                <li>Right Arrow Key for Square</li>
+              </ul>
+          <dt>2. Colours</dt>
+            <dd>You can select a colour by clicking on them at the right hand side of the screen as seen below.</dd>
+          <dt>3. Painting</dt>
+            <dd>To paint you must make sure you picked a paintbrush and once you do you can paint by <strong>holding the mouse button and dragging along the screen</strong>.</dd>
+          <dt>4. Changing Size of Paint</dt>
+            <dd>This is done by using the slider on the further right of screen. The default is 25 but it can go as low as 1 and as high as 100.</dd>
+            <video autoplay loop muted><source src="Videos\Painting Video.mp4">Your browser does not support the video tag.</video>
+          <dt>5. Want to use a Blank Canvas?</dt>
+            <dd>To open up the blank canvas, you press the <strong>ENTER key button</strong>.</dd>
+          <dt>6. Save Coloured Sketch</dt>
+            <dd>If you want to save what you've coloured you press the <strong>'s' key button</strong>. The image should then be in your Processing Sketch directory when you first open up the program.</dd>
+            <img src="Images\Save Location.PNG" alt="Save loaction"/>
+          <dt>7. Changing What Sketch to Colour</dt>
+            <dd>If you want to change the sketch, just press one of the following keys from <strong>1 to 8</strong>.</dd>
+            <dd><em><strong>Note: </strong>When you change sketch, the painting progress will reset and will no longer be like you left it. Sorry.</em></dd>
+          <dt>8. Instructuion Reminder</dt>
+            <dd>If you are lost, you can press the <strong>'Help Icon'</strong> to get a quick reminder of some key controls.</dd>
+            <dd>However, if you want a more detailed looked at the controls, you can press the <strong>BACKSPACE key button.</strong></dd>
+            <img src="Images\Help Location.PNG" alt="Help Icon loaction"/>
+        </dl>
+        <h4>If you don't remember all this, don't worry! When you first open the program, you will be welcomed with an instruction screen before you can start painting.</p>
+    </section>
+
+    <section id="download">
+      <h2>Download</h2>
+      <div class="P3">
+        <img src="Images\processing3-logo.png" alt="Processing 3 Logo" width="200" height="200"/>
+        <p><strong>Requirement:</strong> You must have the <a href="https://processing.org/download/">Processing 3</a> Program to operate this game.</p>
+      </div>
+      <div>
+        <a href="Colouring_In_Game.zip">Download Colouring-In Game</a>
+      </div>
+    </section>
+  </body>
+
+  <footer id="credits">
+    <script> </script>
+    <h2>Credits</h2>
+      <p><em>OLET1305 - Coding Literacy at University of Sydney</em></p>
+      <p><img src="Images\email.jpg" alt="Email Icon" width="35" height="25"/> trisha_vincent@outlook.com</p>
+      <p><a href="https://twitter.com/trisha_vin"><img src="Images\twitter.jpg" alt="Twitter Icon" width="25" height="25"/></a> @trish_vin</p>
+  </footer>
+</html>

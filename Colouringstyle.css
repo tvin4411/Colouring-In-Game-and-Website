@@ -1,0 +1,207 @@
+* {
+  font-family: Verdana;
+}
+body {
+  padding: 10px 10px 10px 210px;
+  background-color: #E0F7FA;
+}
+p, dd {
+  font-size: 20px;
+}
+#intro {
+  margin: 0;
+  padding: 15px;
+  border: 5px dashed #00CED1;
+  border-radius: 40%;
+  background-color: #40E0D0;
+  text-align: center;
+  text-shadow: -3px -1px white;
+}
+h3 {
+  font-size: 35px;
+  color: #FFB74D;
+  text-align: center;
+  text-shadow: 2px 1px #EF6C00;
+}
+
+/* Navigation Menu */
+nav ul {
+  display: inline-block;
+  z-index: 100;
+  overflow: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  height: 100%;
+  background-color: #90A4AE;
+  border-right: 3px solid #78909C;
+}
+nav li img:hover {
+  transform: scale(1.2, 1.2);
+}
+nav li {
+  padding: 30px 20px;
+  border-bottom: 5px solid #78909C;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  text-shadow: 2px 2px #673AB7;
+  font-weight: bold;
+  font-size: 25px;
+}
+nav li:hover {
+  background-color: #CFD8DC;
+}
+nav a:hover {
+  text-shadow: 3px 2px #0288D1;
+}
+
+/* All Sections */
+section h2 {
+  margin-bottom: 0;
+  font-size: 30px;
+  color: #3F51B5;
+}
+#about .pop, #controls h4:last-of-type {
+  margin: 30px 0 0 0;
+  padding: 15px 20px;
+  background-color: #B3E5FC;
+  border: 3px dashed #0288D1;
+  text-align: center;
+  font-size: 18px;
+  transform: scale(0.98, 0.98);
+  transition: 0.9s ease-in-out;
+}
+#about div:hover, #controls h4:last-of-type:hover {
+  transform: scale(1, 1);
+  transition: 1s ease-in-out;
+}
+#controls,  #download {
+  position: relative;
+  left: 0;
+  width: 100%;
+  margin: 70px 0;
+  border-top: 10px dashed #FFB74D;
+  padding: 20px 0 0 10px;
+}
+/* About Section */
+#about h3 {
+  padding: 5px 0;
+  background-color: #80DEEA;
+  font-size: 20px;
+  color: black;
+  text-shadow: none;
+}
+#about .tools, #about .sketches {
+  display: flex;
+  flex-flow: row wrap;
+}
+#about #S img {
+  flex: 1;
+  margin: 50px;
+  transform: scale(1, 1);
+  transition: 1s ease-in-out;
+}
+#about #S img:hover {
+  border: 5px solid #FFB74D;
+}
+#about #T {
+  flex: 1;
+  margin: 20px 10px;
+  border: 4px inset #80DEEA;
+}
+#about #T img {
+  margin: 20px 70px 30px 70px;
+  transform: scale(1, 1);
+  transition: 1s ease-in-out;
+}
+#about #T .brush {
+  margin: 110px 45px;
+}
+#about #T img:hover, #about #S img:hover {
+  transform: scale(1.1, 1.1);
+  transition: 1s ease-in-out;
+}
+/* Controls Section */
+#controls h4 {
+  margin-top: 0;
+  font-size: 20px;
+}
+#controls dt {
+  margin: 20px 0 0 15px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #0288D1;
+}
+#controls dd {
+  font-size: 18px;
+  margin: 10px 15px;
+}
+#controls ul {
+  columns: 2;
+}
+#controls video, #controls img {
+  width: 50%;
+  height: 50%;
+  margin: 0 25%;
+  border: 4px inset #80DEEA;
+}
+/* Download Section */
+#download .P3 {
+  border: 10px inset #80DEEA;
+  padding: 10px;
+  text-align: center;
+}
+#download a:hover {
+  color: #FFB74D;
+}
+#download div:last-of-type {
+  border: 6px outset #F57C00;
+  background-color: #FFA726;
+  margin-top: 20px;
+  margin-right: 0px;
+  padding: 20px 40px;
+  text-align: center;
+}
+#download div:last-of-type:hover {
+  cursor: pointer;
+  border: 6px outset #E65100;
+  background-color: #FFB74D;
+}
+#download div:last-of-type a {
+  color: black;
+  font-weight: bold;
+  font-size: 30px;
+}
+#download div:last-of-type a:active {
+  color: white;
+}
+
+footer {
+  z-index: 101;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  border-top: 5px dashed #00CED1;
+  background-color: #40E0D0;
+}
+footer h2 {
+  padding: 0 30px;
+}
+footer img, footer p {
+  margin-top: -10px;
+}
+footer p {
+  padding: 0 30px;
+  font-size: 15px;
+  float: left;
+}
+footer img:hover {
+  width: 36px;
+  height: 30px;
+}
