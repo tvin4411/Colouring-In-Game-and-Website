@@ -67,7 +67,7 @@ section h2 {
   font-size: 30px;
   color: #3F51B5;
 }
-#about .pop, #controls h4:last-of-type {
+#about h4, #controls h4:last-of-type {
   margin: 30px 0 0 0;
   padding: 15px 20px;
   background-color: #B3E5FC;
@@ -97,7 +97,7 @@ section h2 {
   color: black;
   text-shadow: none;
 }
-#about .tools, #about .sketches {
+#about .sketches, #about .tools {
   display: flex;
   flex-flow: row wrap;
 }
@@ -204,4 +204,134 @@ footer p {
 footer img:hover {
   width: 36px;
   height: 30px;
+}
+
+/* Media Queries */
+/* 4K - 2560px */
+@media (max-width: 2560px) {
+  #about #S img {
+    width: 500px;
+    height: 500px;
+    margin: 35px;
+  }
+  #about #T img:first-of-type {
+    width: 500px;
+    height: 400px;
+    margin-left: 20em;
+  }
+  #about #T:last-of-type img {
+    width: 300px;
+    height: 300px;
+    margin: 90px 8em;
+  }
+}
+/* Large Laptop - 1440px */
+@media (max-width: 1440px) {
+  #about #S img {
+    width: 550px;
+    height: 550px;
+    margin: 22px;
+  }
+  #about #T img:first-of-type {
+    width: 450px;
+    height: 350px;
+    margin-left: 6em;
+  }
+  #about #T:last-of-type img {
+    width: 200px;
+    height: 200px;
+    margin: 90px 1.8em;
+  }
+}
+/* Laptop - 1024px */
+@media (max-width: 1024px) {
+  #about #S img {
+    width: 350px;
+    height: 350px;
+    margin: 20px;
+  }
+  #about #T img:first-of-type {
+    margin-left: 9em;
+  }
+  #about #T:last-of-type img {
+    margin: 20px 5em;
+  }
+}
+/* Tablet - 768px */
+@media (max-width: 768px) {
+  body {
+    width: 100%;
+  }
+  footer {
+    width: 132%;
+  }
+  #about #S img {
+    margin: 15px;
+  }
+}
+/* Large Mobile - 425px */
+@media (max-width: 425px) {
+  body {
+    width: 155%;
+  }
+  footer {
+    width: 212%;
+  }
+  #about #S img {
+    width: 600px;
+    height: 600px;
+    margin: 30px;
+  }
+  #about #T img:first-of-type {
+    margin-left: 7em;
+  }
+  #about #T:last-of-type img {
+    margin: 10px 3em;
+  }
+  #about h2, #controls h2, #download h2 {
+    font-size: 45px;
+  }
+  #controls dt {
+    font-size: 40px;
+  }
+  p, #controls dd {
+    font-size: 35px;
+  }
+  #about h4, #controls h4:last-of-type {
+    font-size: 20px;
+  }
+}
+/* Medium Mobile - 375px */
+@media (max-width: 375px) {
+  body {
+    width: 170%;
+  }
+  footer {
+    width: 234%;
+  }
+  #controls dt {
+    font-size: 31px;
+  }
+}
+/* Small Mobile - 320px */
+@media (max-width: 320px) {
+  body {
+    width: 190%;
+  }
+  footer {
+    width: 274%;
+  }
+  #about #S img {
+    width: 570px;
+    height: 570px;
+  }
+  #about #T img:first-of-type {
+    margin-left: 5em;
+  }
+  #about #T:last-of-type img {
+    margin: 20px 2.5em;
+  }
+  p, #controls dd {
+    font-size: 30px;
+  }
 }
