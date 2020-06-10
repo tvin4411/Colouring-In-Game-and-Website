@@ -1,4 +1,4 @@
-# Colouring-Sketch-Website
+# Colouring In Game + Website
 University Project 
 Hello,
 This project of mine is something I created while in University where I'm just practicing my coding skills in terms of HTML, CSS and Processing.
