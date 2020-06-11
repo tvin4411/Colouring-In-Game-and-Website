@@ -12,7 +12,7 @@ p, dd {
   margin: 0;
   padding: 15px;
   border: 5px dashed #00CED1;
-  border-radius: 40%;
+  border-radius: 10px;
   background-color: #40E0D0;
   text-align: center;
   text-shadow: -3px -1px white;
@@ -28,7 +28,6 @@ h3 {
 nav ul {
   display: inline-block;
   z-index: 100;
-  overflow: auto;
   position: fixed;
   top: 0;
   left: 0;
@@ -177,6 +176,7 @@ section h2 {
   color: black;
   font-weight: bold;
   font-size: 30px;
+  text-decoration: none;
 }
 #download div:last-of-type a:active {
   color: white;
@@ -197,9 +197,13 @@ footer img, footer p {
   margin-top: -10px;
 }
 footer p {
-  padding: 0 30px;
+  color: black;
+  padding: 0 50px;
   font-size: 15px;
   float: left;
+}
+footer p:hover, footer a:hover {
+  color: white;
 }
 footer img:hover {
   width: 36px;
