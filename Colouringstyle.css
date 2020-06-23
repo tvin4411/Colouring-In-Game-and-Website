@@ -11,7 +11,7 @@ p, dd {
 #intro {
   margin: 0;
   padding: 15px;
-  border: 5px dashed #00CED1;
+  border: 10px double #00CED1;
   border-radius: 10px;
   background-color: #40E0D0;
   text-align: center;
@@ -21,7 +21,7 @@ h3 {
   font-size: 35px;
   color: #FFB74D;
   text-align: center;
-  text-shadow: 2px 1px #EF6C00;
+  text-shadow: 2px 1px 2px #EF6C00;
 }
 
 /* Navigation Menu */
@@ -92,16 +92,18 @@ section h2 {
 #about h3 {
   padding: 5px 0;
   background-color: #80DEEA;
+  border-bottom: 5px solid teal;
   font-size: 20px;
   color: black;
   text-shadow: none;
 }
-#about .sketches, #about .tools {
-  display: flex;
-  flex-flow: row wrap;
+#about .sketches {
+  width: 200px;
+  height: 200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 #about #S img {
-  flex: 1;
   margin: 50px;
   transform: scale(1, 1);
   transition: 1s ease-in-out;
@@ -110,17 +112,16 @@ section h2 {
   border: 5px solid #FFB74D;
 }
 #about #T {
-  flex: 1;
   margin: 20px 10px;
   border: 4px inset #80DEEA;
 }
 #about #T img {
-  margin: 20px 70px 30px 70px;
+  position: relative;
+  left: 3em;
+  margin: 0;
+  padding: 1.5em;
   transform: scale(1, 1);
   transition: 1s ease-in-out;
-}
-#about #T .brush {
-  margin: 110px 45px;
 }
 #about #T img:hover, #about #S img:hover {
   transform: scale(1.1, 1.1);
@@ -187,7 +188,7 @@ footer {
   position: absolute;
   left: 0;
   width: 100%;
-  border-top: 5px dashed #00CED1;
+  border-top: 10px double #00CED1;
   background-color: #40E0D0;
 }
 footer h2 {
