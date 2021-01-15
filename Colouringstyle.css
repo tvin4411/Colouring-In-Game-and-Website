@@ -2,26 +2,11 @@
   font-family: Verdana;
 }
 body {
-  padding: 10px 10px 10px 210px;
+  padding: 10px 10px 10px 10px;
   background-color: #E0F7FA;
 }
 p, dd {
   font-size: 20px;
-}
-#intro {
-  margin: 0;
-  padding: 15px;
-  border: 10px double #00CED1;
-  border-radius: 10px;
-  background-color: #40E0D0;
-  text-align: center;
-  text-shadow: -3px -1px white;
-}
-h3 {
-  font-size: 35px;
-  color: #FFB74D;
-  text-align: center;
-  text-shadow: 2px 1px 2px #EF6C00;
 }
 
 /* Navigation Menu */
@@ -34,34 +19,38 @@ nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  width: 200px;
-  height: 100%;
+  width: 100%;
+  height: 70px;
   background-color: #90A4AE;
   border-right: 3px solid #78909C;
-}
-nav li img:hover {
-  transform: scale(1.2, 1.2);
-}
-nav li {
-  padding: 30px 20px;
   border-bottom: 5px solid #78909C;
 }
-nav a {
-  color: white;
-  text-decoration: none;
-  text-shadow: 2px 2px #673AB7;
+nav li {
+  float: left;
+  padding: 20px 20px;
+}
+#title {
   font-weight: bold;
   font-size: 25px;
+  padding-right: 200px;
 }
-nav li:hover {
+nav #sub {
+  width: 150px;
+  text-align: center;
+}
+nav #sub:hover {
   background-color: #CFD8DC;
 }
-nav a:hover {
-  text-shadow: 3px 2px #0288D1;
+nav li a {;
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+  text-shadow: 2px 2px #673AB7;
 }
 
 /* All Sections */
 section h2 {
+  margin-top: 40px;
   margin-bottom: 0;
   font-size: 30px;
   color: #3F51B5;
@@ -85,16 +74,38 @@ section h2 {
   left: 0;
   width: 100%;
   margin: 70px 0;
-  border-top: 10px dashed #FFB74D;
+  border-top: 10px dashed teal;
   padding: 20px 0 0 10px;
 }
+
 /* About Section */
-#about h3 {
+#about #logo {
+  position: relative;
+  top: 5em;
+  left: 5em;
+  float: left;
+  width: 20%;
+  height: 20%;
+  padding: 20px;
+}
+#about .whatText {
+  float: right;
+  width: 65%;
+}
+#greet {
+  padding-top: 30px;
+  font-size: 35px;
+  color: teal;
+  text-shadow: 2px 1px 2px #80DEEA;
+}
+#about #subTitle {
+  clear: both;
   padding: 5px 0;
   background-color: #80DEEA;
   border-bottom: 5px solid teal;
   font-size: 20px;
   color: black;
+  text-align: center;
   text-shadow: none;
 }
 #about .sketches {
@@ -104,9 +115,11 @@ section h2 {
   margin-right: auto;
 }
 #about #S img {
-  margin: 50px;
   transform: scale(1, 1);
   transition: 1s ease-in-out;
+  width: 500px;
+  height: 500px;
+  margin: 35px;
 }
 #about #S img:hover {
   border: 5px solid #FFB74D;
@@ -114,18 +127,39 @@ section h2 {
 #about #T {
   border: 4px inset #80DEEA;
 }
-#about #T img {
-  position: relative;
-  left: 3em;
-  padding: 1.5em;
-  transform: scale(1, 1);
-  transition: 1s ease-in-out;
+#about .tools {
+  margin-left: 170px;
+  margin-right: 170px;
 }
-#about #T img:hover, #about #S img:hover {
+#about #T {
+  float: left;
+  margin: 30px;
+}
+#T:first-child img {
+  padding: 40px;
+  width: 500px;
+  height: 400px;
+}
+#T:last-child img {
+  padding: 10px;
+  padding-left: 60px;
+  width: 65%;
+  height: 65%;
+  float: left;
+  clear: both;
+}
+ #about #S img:hover {
   transform: scale(1.1, 1.1);
   transition: 1s ease-in-out;
 }
+#about h4 {
+  clear: both;
+}
+
 /* Controls Section */
+#controls {
+  clear: both;
+}
 #controls h4 {
   margin-top: 0;
   font-size: 20px;
@@ -159,8 +193,8 @@ section h2 {
   color: #FFB74D;
 }
 #download div:last-of-type {
-  border: 6px outset #F57C00;
-  background-color: #FFA726;
+  border: 6px outset #007373;
+  background-color: #008080e0;
   margin-top: 20px;
   margin-right: 0px;
   padding: 20px 40px;
@@ -168,8 +202,8 @@ section h2 {
 }
 #download div:last-of-type:hover {
   cursor: pointer;
-  border: 6px outset #E65100;
-  background-color: #FFB74D;
+  border: 6px outset #008080a6;
+  background-color: #008080a6;
 }
 #download div:last-of-type a {
   color: black;
@@ -184,19 +218,20 @@ section h2 {
 footer {
   z-index: 101;
   position: absolute;
-  left: 203px;
-  width: 86.3%;
-  border-top: 10px double #00CED1;
-  background-color: #40E0D0;
+  left: 0px;
+  width: 100%;
+  border-top: 10px double #78909C;
+  background-color: #90A4AE;
 }
 footer h2 {
   padding: 0 30px;
+  color: white;
+  text-shadow: 2px 2px #673AB7;
 }
 footer img, footer p {
   margin-top: -10px;
 }
 footer p {
-  color: black;
   padding: 0 50px;
   font-size: 15px;
   float: left;
@@ -204,30 +239,8 @@ footer p {
 footer p:hover, footer a:hover {
   color: white;
 }
-footer img:hover {
-  width: 36px;
-  height: 30px;
-}
 
 /* Media Queries */
-/* 4K - 2560px */
-@media screen and (max-width: 2560px) {
-  #about #S img {
-    width: 500px;
-    height: 500px;
-    margin: 35px;
-  }
-  #about #T img:first-of-type {
-    width: 500px;
-    height: 400px;
-    margin-left: 20em;
-  }
-  #about #T:last-of-type img {
-    width: 300px;
-    height: 300px;
-    margin: 90px 8em;
-  }
-}
 /* Large Laptop - 1440px */
 @media screen and (max-width: 1440px) {
   #about #S img {

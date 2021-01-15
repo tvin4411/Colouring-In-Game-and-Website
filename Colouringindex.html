@@ -9,23 +9,24 @@
   <body>
     <nav>
       <ul>
-        <li><a href="#intro"><img src="Images\WebLogo.png" alt="WebLogo" width="170" height="170"/></a></li>
-        <li><a href="#about">What is it?</a></li>
-        <li><a href="#controls">Controls</a></li>
-        <li><a href="#download">Download</a></li>
-        <li><a href="#credits">Credits</a></li>
+        <li><a id="title">Digital Random Colouring Canvas</a></li>
+        <li id="sub"><a href="#about">What is it?</a></li>
+        <li id="sub"><a href="#controls">Controls</a></li>
+        <li id="sub"><a href="#download">Download</a></li>
+        <li id="sub"><a href="#credits">Credits</a></li>
       </ul>
     </nav>
 
-    <h1 id="intro">Digital Random Colouring Canvas</h1>
-      <h3>Hello! Welcome to my website where you can download my colouring game!</h3>
-
     <section id="about">
-      <h2>What is it?</h2>
-        <p>In one of my classes I was tasked to create my very own Creative Coding Project using Processing and for that I decided to develop a colouring game for your computers or laptops.
-        <br>Currently there are a total of <strong>8 sketches</strong> which you can paint with <strong>18 different colours</strong> and <strong>2 different types of paint brushes</strong>. But if your want to create your own art, there is also a <strong>blank canvas</strong> option.</p>
-        <p>The sketches given will be randomised but if you refreash you might get a different sketch if need be.</p>
-      <h3>Sketches</h3>
+      <img id="logo" src="Images\WebLogo.png" alt="Web Logo"/>
+      <div class="whatText">
+        <h3 id="greet">Hello! Welcome to my website where you can download my colouring game!</h3>
+        <h2>What is it?</h2>
+          <p>In one of my classes I was tasked to create my very own Creative Coding Project using Processing and for that I decided to develop a colouring game for your computers or laptops.
+          <br>Currently there are a total of <strong>8 sketches</strong> which you can paint with <strong>18 different colours</strong> and <strong>2 different types of paint brushes</strong>. But if your want to create your own art, there is also a <strong>blank canvas</strong> option.
+          The sketches given will be randomised but if you refreash you might get a different sketch if need be.</p>
+      </div>
+      <h3 id="subTitle">Sketches</h3>
       <table class="sketches">
         <tr id="S">
           <td><img src="Images\1.png" alt="Sketch 1 - Cat Face"/></td>
@@ -46,13 +47,13 @@
       </table>
       <div class="tools">
         <div id="T">
-          <h3>Blank Canvas, Colour Palette & Size Slider</h3>
-          <img src="Images\blankcanvas.png" alt="Blank Canvas" width="450" height="350"/>
+          <h3 id="subTitle">Blank Canvas, Colour Palette & Size Slider</h3>
+          <img src="Images\blankcanvas.png" alt="Blank Canvas"/>
         </div>
         <div id="T">
-          <h3>Paint Brushes</h3>
-          <img src="Images\Circle Brush.PNG" alt="Circle Brush" class="brush" width="200" height="200"/>
-          <img src="Images\Square Brush.PNG" alt="Square Brush" class="brush" width="200" height="200"/>
+          <h3 id="subTitle">Paint Brushes</h3>
+          <img src="Images\Circle Brush.PNG" alt="Circle Brush" class="brush"/>
+          <img src="Images\Square Brush.PNG" alt="Square Brush" class="brush"/>
         </div>
       </div>
         <h4>As you can tell, this project is not yet that advanced as many other colouring games but I do hope you enjoy it nevertheless!
@@ -110,7 +111,7 @@
     <script> </script>
     <h2>Credits</h2>
       <p><em>OLET1305 - Coding Literacy at University of Sydney</em></p>
-      <p><a href="https://twitter.com/trisha_vin"><img src="Images\twitter.jpg" alt="Twitter Icon" width="25" height="25"/></a> @trish_vin</p>
-      <p><a href="https://github.com/tvin4411?tab=repositories">Github Repository</a></p>
+      <p><a href="https://twitter.com/trisha_vin"><img src="Images\twitter.jpg" alt="Twitter Icon" width="25" height="25"/></a>@trish_vin</p>
+      <p><a href="https://github.com/tvin4411?tab=repositories"></a>Github Repository</p>
   </footer>
 </html>
